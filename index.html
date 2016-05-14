@@ -1,234 +1,42 @@
-<html dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
   <head>
-    <title>3rbMc</title>
-	<link rel="shortcut icon" href='images/grass.ico' />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
-    <meta name="description" content="Download Files for game Minecraft" />
-    <meta name="keywords" content="optifine, minimap, xray, minecraft, fps, lag, install, mods, textures, maps, skins, projects, servers, blogs, tools, skydaz, info, program, ftb, craftbukkit, plugins" />
-    <style type="text/css">
-      body {font-family:arial,helvetica,sans-serif; 
-            background-image:url('images/bg-stone.png');}
-      A {color: rgb(100,128,255); text-decoration: none; }    
-      .tableRoot {margin: 0 auto; 
-                  width: 1000px; 
-                  background: white; 
-                  border: 5px solid rgb(128,128,128);}
-      .title {font-family:Times, serif; 
-              font-size: 268%; 
-              font-weight: bold;
-              text-align: center;			  
-              background: rgb(200, 200, 255);
-              padding-left: 15px;}
-      .title A {color: rgb(100,128,255); 
-                text-decoration: none;}
-      .tableNav {text-align: right; 
-                 background: rgb(240, 240, 255); 
-                 border-width: 0px}
-      .tableNav A {color: rgb(100,128,255); 
-                   text-decoration: none;}
-      .tableNav A:hover {color: rgb(100,128,255); 
-                         text-decoration: underline; }
-      .tableNav TR TD {padding-right: 15px; }
-      .content {padding: 18px;
-                padding-top: 10px; 
-                text-align: right; 
-                text-indent: 0px; 
-                margin: 10px; }
-      .footer {font-size:small; 
-               text-align: center;  
-               background: rgb(240, 240, 255); 
-               padding: 3px; }
-      .footer A {text-decoration: none;
-                 color: rgb(100,128,255); }
-      .downloads {}
-      .downloadLine {}
-      .downloadLineFile {width: 230px; }
-      .downloadLineDownload {}
-      .downloadLineMirror {width: 100px; }
-      .downloadLineDate {font-size: x-small;}
-      LI STRONG {line-height: 200%;}
-      .tableAds {margin: 0 auto; }
-      .tableDonate TR {height: 35px; }
-      .scaleNearest {  
-                       image-rendering:optimizeSpeed;             /* Legal fallback                 */
-                       image-rendering:-moz-crisp-edges;          /* Firefox                        */
-                       image-rendering:-o-crisp-edges;            /* Opera                          */
-                       image-rendering:-webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-                       image-rendering:optimize-contrast;         /* CSS3 Proposed                  */
-                       -ms-interpolation-mode:nearest-neighbor;   /* IE8+                           */
-                    }
-    .style1 {
-	font-size: 1pt;
-	color: #0000FF;
-}
-.style3 {
-	color: #0000FF;
-}
-    .style4 {
-	background-position: 0% 0%;
-	font-family: Times, serif;
-	font-size: 268%;
-	font-weight: bold;
-	text-align: center;
-	padding-left: 15px;
-	background-image: none;
-	background-repeat: repeat;
-	background-attachment: scroll;
-}
-    </style>
-
-	
-  </head>
-    <body style="background-image: url('bg-stone.png')">
-     <table class="tableRoot">
-      <tr>
-        <td class="style4">
-          <span class="style3">
-          <!-- Title -->
-          </span>
-          <span class="style1" lang="en-us"></span><span class="style3">3<span lang="en-us">r</span>bMc 
-		  |  صفحة بلوقنات </span>
-        </td>
-      </tr>
-      <!--<tr>
-        <td class="tableNav">
-          <!-- Navigation --
-          <table class="tableNav">
-          <tr>
-            <td>
-            <a href="#">نون</a>
-            </td>
-            <td>
-            <a href="#">نون</a>
-            </td>
-            <td>
-            <a href="#">نون</a>
-            </td>
-            <td>
-            <a href="#">نون</a>
-            </td>
-            <td>
-            <a href="#">نون</a>
-            </td>
-            </tr>
-          </table>
-        </td>
-      </tr>-->
-      <tr>
-        <td class="content">
-          <!-- Content -->
-   <center>
-    <div class="mcversions">
-      <script>                                                                   
-        function display_relevent()                                              
-        {                                                                        
-          var opts = document.getElementById("view_version");                    
-          var version = "all";                                                   
-          for (var x = 0; x < opts.length; x++)                                  
-          {                                                                      
-            var table = document.getElementById(opts[x].value + "_builds");      
-            if (table)                                                           
-            {                                                                    
-              table.style.display = (opts[x].selected ? "block" : "none");       
-            }                                                                    
-            if (opts[x].selected)                                                
-            {                                                                    
-              version = opts[x].value;                                           
-            }                                                                    
-          }                                                                      
-          var table = document.getElementById("promotions_table");               
-          for (var i = 0; i < table.rows.length; i++)                            
-          {                                                                      
-            row = table.rows[i];                                                 
-            data = row.cells[2].innerHTML;                                       
-            if (version == "all" || data == "Minecraft")                         
-            {                                                                    
-              row.style.display = "table-row";                                   
-            }                                                                    
-            else                                                                 
-            {                                                                    
-              row.style.display = (data == version ? "table-row" : "none");      
-            }                                                                    
-          }                                                                      
-        }                                                                        
-      </script>	  
-      <form>                                                                     
-       <h3>
-        <select name="view_version" id="view_version"  onChange="display_relevent()">
-              <option value="all" selected>قائمة البلوقنات</option>
-              <option value="protection">RedStonPvP</option>
-              <option value="general">Games</option>
-            </select>
-        : قائمة البلوقنات</h3>
-      </form>
-    </div></center>
-    <div class="builds" id="protection_builds" style="display:none;">
-      <h2>RedStonPvP</h2>
-<table border="0">
-        <tr>
-          <th>رابط البلوقن</th>
-          <th>&nbsp;</th>
-          <th>شرح البلوقن</th>
-          <th>&nbsp;</th>
-          <th></th>
-          <th>&nbsp;</th>
-          <th>اسم البلوقن</th>
-        </tr>
-        <tr>
-          <td><a href="http://adf.ly/nkPUU"> رابط 
-			البلوقن</a></td>
-          <td>&nbsp;</td>
-          <td><a href="http://youtu.be/O0jaFX3TaH8">رابط الشرح</a></td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td>&nbsp;</td>
-           <td>RedStonePvP-Pro</td>
-        </tr>
-      </table>
-    </div>
-    <div class="builds" id="general_builds" style="display:none;">
-      <h2>Games</h2>
-<table border="0">
-        <tr>
-          <th>رابط البلوقن</th>
-          <th>&nbsp;</th>
-          <th>شرح البلوقن</th>
-          <th>&nbsp;</th>
-          <th></th>
-          <th>&nbsp;</th>
-          <th>اسم البلوقن</th>
-        </tr>
-        <tr>
-          <td><a href="http://adf.ly/oEhpJ"> رابط 
-			التكستر باك والصورة والماب</a></td>
-          <td>&nbsp;</td>
-          <td><a href="http://youtu.be/uMQsfi0n0fE">رابط الشرح</a></td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td>&nbsp;</td>
-           <td>GTA V</td>
-        </tr>
-      </table>
-    </div>
-    
-  <div class="subsections" id="subsections">
-    <h2>&nbsp;</h2>
-    </div>
-        </td>
-      </tr>
-      <tr>
-        <td class="footer">
-          <!-- Footer --
-          <a href.="#">نون</a>
-          &nbsp;
-          <a href.="#">نون</a>
-          &nbsp;
-          <a href.="#">نون</a>-->
-<!-- Start of adf.ly & shorte.st banner code --> 
-&nbsp;
-<!-- End of adf.ly & shorte.st banner code -->
-        </td>
-      </tr>
-    </table>
-  </body>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cerulean/bootstrap.min.css">
+      <title>3rbMc</title>
+   </head>
+   <body style="background-image: url('bg-stone.png')">
+      <div class="container">
+         <BR>
+         <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                  <div class="navbar-header navbar-right">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     </button>
+                     <a class="navbar-brand" href="#">بلوقنات المجهول</a>
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                     <!--<li><a href="#">Link</a></li>-->
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <div class="jumbotron">
+            <h1>3rbMc |  صفحة بلوقنات</h1>
+            <ul class="nav nav-tabs navbar-right">
+               <li role="presentation"><a>Games</a></li>
+               <li role="presentation"><a>RedStonPvP</a></li>
+               <li role="presentation" class="active"><a>قائمة البلوقنات</a></li>
+            </ul>
+            <BR><BR><BR>
+         </div>
+      </div>
+   </body>
 </html>
